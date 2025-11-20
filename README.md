@@ -82,25 +82,59 @@ const YCBM_CONFIG = {
 
 ### ローカルで表示
 
-1. このディレクトリをウェブサーバーで公開するか、以下のコマンドで簡易サーバーを起動：
+#### 推奨: Vite開発サーバー（npm run dev）
+
+1. 依存関係をインストール：
+
+```bash
+npm install
+```
+
+2. 開発サーバーを起動：
+
+```bash
+npm run dev
+```
+
+3. ブラウザが自動的に開き、`http://localhost:3000` でページが表示されます
+
+#### その他の方法
+
+以下のコマンドでも簡易サーバーを起動できます：
 
 ```bash
 # Pythonを使用する場合
+npm run serve
+# または
 python3 -m http.server 8000
 
 # Node.jsを使用する場合
 npx http-server
 ```
 
-2. ブラウザで `http://localhost:8000` にアクセス
+### 本番ビルド
+
+本番環境用に最適化されたビルドを作成：
+
+```bash
+npm run build
+```
+
+ビルドされたファイルは `dist/` ディレクトリに出力されます。
+
+ビルドをプレビュー：
+
+```bash
+npm run preview
+```
 
 ### 本番環境へのデプロイ
 
 このランディングページは静的ファイルのみで構成されているため、以下のサービスで簡単にデプロイできます：
 
-- **GitHub Pages**: リポジトリの Settings → Pages で有効化
-- **Netlify**: ドラッグ&ドロップでデプロイ
-- **Vercel**: GitHubリポジトリと連携してデプロイ
+- **GitHub Pages**: リポジトリの Settings → Pages で有効化（`dist/` フォルダを指定）
+- **Netlify**: ドラッグ&ドロップでデプロイ（build command: `npm run build`, publish directory: `dist`）
+- **Vercel**: GitHubリポジトリと連携してデプロイ（Viteプロジェクトとして自動認識）
 - **AWS S3 + CloudFront**: 静的ウェブサイトホスティング
 
 ## YCBM統合方法
