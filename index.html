@@ -106,44 +106,17 @@
             <h2 class="section-title">予約はこちらから</h2>
             <p class="booking-description">以下のカレンダーから、ご都合の良い日時を選択してください。</p>
 
-            <!-- YCBM統合エリア -->
+            <!-- YCBM予約カレンダー -->
             <div class="booking-container">
-                <!-- 方法1: iframeでの埋め込み -->
-                <div id="ycbm-iframe-container" class="booking-method">
-                    <h3>オプション1: iframeでの埋め込み</h3>
-                    <div class="iframe-wrapper">
-                        <!--
-                            あなたのYCBM予約ページのURLに置き換えてください
-                            例: https://yourusername.youcanbook.me/
-                        -->
-                        <iframe
-                            id="ycbm-iframe"
-                            src="https://rikitomorikawa.youcanbook.me/"
-                            width="100%"
-                            height="800"
-                            frameborder="0"
-                            allowfullscreen>
-                        </iframe>
-                    </div>
-                </div>
-
-                <!-- 方法2: JavaScript埋め込み -->
-                <div id="ycbm-widget-container" class="booking-method" style="display: none;">
-                    <h3>オプション2: JavaScriptウィジェット</h3>
-                    <div id="ycbm-widget"></div>
-                    <p class="config-note">
-                        ⚠️ scripts.js内のYCBM_ACCOUNT_IDを設定してください
-                    </p>
-                </div>
-
-                <!-- 切り替えボタン -->
-                <div class="booking-toggle">
-                    <button onclick="switchBookingMethod('iframe')" class="toggle-btn active" id="iframe-btn">
-                        iframeで表示
-                    </button>
-                    <button onclick="switchBookingMethod('widget')" class="toggle-btn" id="widget-btn">
-                        ウィジェットで表示
-                    </button>
+                <div class="iframe-wrapper">
+                    <iframe
+                        id="ycbm-iframe"
+                        src="https://rikitomorikawa.youcanbook.me/"
+                        width="100%"
+                        height="800"
+                        frameborder="0"
+                        allowfullscreen>
+                    </iframe>
                 </div>
             </div>
         </div>
