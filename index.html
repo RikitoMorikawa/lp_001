@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>予約システム - YCBM統合ランディングページ</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- ヒーローセクション -->
+    <header class="hero">
+        <nav class="navbar">
+            <div class="container">
+                <div class="nav-brand">
+                    <h2>予約システム</h2>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#features">特徴</a></li>
+                    <li><a href="#booking">予約</a></li>
+                    <li><a href="#contact">お問い合わせ</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="hero-content container">
+            <h1 class="hero-title">簡単・便利な予約システム</h1>
+            <p class="hero-subtitle">オンラインで24時間いつでも予約可能。あなたのスケジュールに合わせて最適な時間を選べます。</p>
+            <a href="#booking" class="cta-button">今すぐ予約する</a>
+        </div>
+    </header>
+
+    <!-- 特徴セクション -->
+    <section id="features" class="features">
+        <div class="container">
+            <h2 class="section-title">私たちの特徴</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">📅</div>
+                    <h3>簡単予約</h3>
+                    <p>直感的なインターフェースで、数クリックで予約が完了します。</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔔</div>
+                    <h3>自動リマインダー</h3>
+                    <p>予約日時が近づくと、自動的にリマインダーが送信されます。</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🌐</div>
+                    <h3>24時間対応</h3>
+                    <p>いつでもどこでも、お好きな時間に予約できます。</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">✨</div>
+                    <h3>即時確認</h3>
+                    <p>予約後すぐに確認メールが届きます。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 予約セクション -->
+    <section id="booking" class="booking-section">
+        <div class="container">
+            <h2 class="section-title">予約はこちらから</h2>
+            <p class="booking-description">以下のカレンダーから、ご都合の良い日時を選択してください。</p>
+
+            <!-- YCBM統合エリア -->
+            <div class="booking-container">
+                <!-- 方法1: iframeでの埋め込み -->
+                <div id="ycbm-iframe-container" class="booking-method">
+                    <h3>オプション1: iframeでの埋め込み</h3>
+                    <div class="iframe-wrapper">
+                        <!--
+                            あなたのYCBM予約ページのURLに置き換えてください
+                            例: https://yourusername.youcanbook.me/
+                        -->
+                        <iframe
+                            id="ycbm-iframe"
+                            src="YOUR_YCBM_BOOKING_URL_HERE"
+                            width="100%"
+                            height="800"
+                            frameborder="0"
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                    <p class="config-note">
+                        ⚠️ YOUR_YCBM_BOOKING_URL_HERE を実際のYCBM予約URLに置き換えてください
+                    </p>
+                </div>
+
+                <!-- 方法2: JavaScript埋め込み -->
+                <div id="ycbm-widget-container" class="booking-method" style="display: none;">
+                    <h3>オプション2: JavaScriptウィジェット</h3>
+                    <div id="ycbm-widget"></div>
+                    <p class="config-note">
+                        ⚠️ scripts.js内のYCBM_ACCOUNT_IDを設定してください
+                    </p>
+                </div>
+
+                <!-- 切り替えボタン -->
+                <div class="booking-toggle">
+                    <button onclick="switchBookingMethod('iframe')" class="toggle-btn active" id="iframe-btn">
+                        iframeで表示
+                    </button>
+                    <button onclick="switchBookingMethod('widget')" class="toggle-btn" id="widget-btn">
+                        ウィジェットで表示
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- APIセクション (開発者向け) -->
+    <section id="api-info" class="api-section">
+        <div class="container">
+            <h2 class="section-title">開発者向け: YCBM API統合</h2>
+            <div class="api-info-grid">
+                <div class="api-card">
+                    <h3>REST API統合</h3>
+                    <p>YCBM REST APIを使用して、プログラム的に予約を管理できます。</p>
+                    <pre><code>// 例: 予約一覧の取得
+fetch('https://api.youcanbook.me/v1/ACCOUNT_ID/profiles/PROFILE_ID/bookings', {
+  headers: {
+    'Authorization': 'Bearer YOUR_API_KEY'
+  }
+})
+.then(response => response.json())
+.then(data => console.log(data));</code></pre>
+                </div>
+                <div class="api-card">
+                    <h3>必要な情報</h3>
+                    <ul>
+                        <li>アカウントID</li>
+                        <li>プロフィールID</li>
+                        <li>APIキー（ダッシュボードから取得）</li>
+                    </ul>
+                    <p>詳細は <a href="https://api.youcanbook.me/docs/" target="_blank">YCBM API ドキュメント</a>を参照してください。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- お問い合わせセクション -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="section-title">お問い合わせ</h2>
+            <p>ご質問やサポートが必要な場合は、お気軽にお問い合わせください。</p>
+            <div class="contact-info">
+                <p>📧 Email: info@example.com</p>
+                <p>📞 Tel: 03-1234-5678</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- フッター -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 予約システム. All rights reserved.</p>
+            <p>Powered by YouCanBookMe</p>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
