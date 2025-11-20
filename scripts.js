@@ -3,7 +3,7 @@
 // 設定: あなたのYCBMアカウント情報に置き換えてください
 const YCBM_CONFIG = {
     accountId: 'YOUR_ACCOUNT_ID',
-    bookingUrl: 'https://yourusername.youcanbook.me/',
+    bookingUrl: 'https://rikitomorikawa.youcanbook.me/',
     // REST APIを使用する場合
     apiKey: 'YOUR_API_KEY',
     profileId: 'YOUR_PROFILE_ID'
