@@ -14,6 +14,8 @@ document.addEventListener('DOMContentLoaded', function() {
     console.log('YCBM Landing Page loaded');
     initSmoothScroll();
     initMobileMenu();
+    initFAQ();
+    initScrollAnimations();
 });
 
 // スムーズスクロールの実装
@@ -213,12 +215,62 @@ async function getAvailableSlots(date) {
     }
 }
 
+// FAQ の開閉機能
+function initFAQ() {
+    const faqItems = document.querySelectorAll('.faq-item');
+
+    faqItems.forEach(item => {
+        const question = item.querySelector('.faq-question');
+
+        question.addEventListener('click', () => {
+            // 他の開いているFAQを閉じる
+            faqItems.forEach(otherItem => {
+                if (otherItem !== item && otherItem.classList.contains('active')) {
+                    otherItem.classList.remove('active');
+                }
+            });
+
+            // クリックされたFAQをトグル
+            item.classList.toggle('active');
+        });
+    });
+}
+
+// スクロールアニメーション
+function initScrollAnimations() {
+    const observerOptions = {
+        threshold: 0.1,
+        rootMargin: '0px 0px -100px 0px'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.style.opacity = '1';
+                entry.target.style.transform = 'translateY(0)';
+            }
+        });
+    }, observerOptions);
+
+    // アニメーション対象の要素を選択
+    const animateElements = document.querySelectorAll('.feature-card, .stat-card, .faq-item, .api-card');
+
+    animateElements.forEach((el, index) => {
+        el.style.opacity = '0';
+        el.style.transform = 'translateY(30px)';
+        el.style.transition = `opacity 0.6s ease ${index * 0.1}s, transform 0.6s ease ${index * 0.1}s`;
+        observer.observe(el);
+    });
+}
+
 // エクスポート（必要に応じて）
 if (typeof module !== 'undefined' && module.exports) {
     module.exports = {
         fetchBookings,
         createBooking,
         getAvailableSlots,
-        switchBookingMethod
+        switchBookingMethod,
+        initFAQ,
+        initScrollAnimations
     };
 }

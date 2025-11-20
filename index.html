@@ -23,11 +23,53 @@
         </nav>
 
         <div class="hero-content container">
-            <h1 class="hero-title">簡単・便利な予約システム</h1>
-            <p class="hero-subtitle">オンラインで24時間いつでも予約可能。あなたのスケジュールに合わせて最適な時間を選べます。</p>
-            <a href="#booking" class="cta-button">今すぐ予約する</a>
+            <div class="hero-badge">完全無料で利用可能</div>
+            <h1 class="hero-title">あなたの時間を<br>もっと自由に</h1>
+            <p class="hero-subtitle">24時間いつでも予約可能。面倒な電話やメールのやり取りは不要。<br>数クリックで予約が完了します。</p>
+            <div class="hero-cta-group">
+                <a href="#booking" class="cta-button cta-primary">今すぐ予約する</a>
+                <a href="#features" class="cta-button cta-secondary">詳しく見る</a>
+            </div>
+            <div class="hero-features">
+                <div class="hero-feature-item">
+                    <span class="check-icon">✓</span>
+                    <span>アカウント登録不要</span>
+                </div>
+                <div class="hero-feature-item">
+                    <span class="check-icon">✓</span>
+                    <span>自動リマインダー</span>
+                </div>
+                <div class="hero-feature-item">
+                    <span class="check-icon">✓</span>
+                    <span>即時確認</span>
+                </div>
+            </div>
         </div>
     </header>
+
+    <!-- 実績セクション -->
+    <section class="stats-section">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-number">10,000+</div>
+                    <div class="stat-label">予約件数</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">98%</div>
+                    <div class="stat-label">顧客満足度</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">24時間</div>
+                    <div class="stat-label">対応可能</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">5分</div>
+                    <div class="stat-label">平均予約時間</div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- 特徴セクション -->
     <section id="features" class="features">
@@ -110,31 +152,46 @@
         </div>
     </section>
 
-    <!-- APIセクション (開発者向け) -->
-    <section id="api-info" class="api-section">
+    <!-- FAQセクション -->
+    <section class="faq-section">
         <div class="container">
-            <h2 class="section-title">開発者向け: YCBM API統合</h2>
-            <div class="api-info-grid">
-                <div class="api-card">
-                    <h3>REST API統合</h3>
-                    <p>YCBM REST APIを使用して、プログラム的に予約を管理できます。</p>
-                    <pre><code>// 例: 予約一覧の取得
-fetch('https://api.youcanbook.me/v1/ACCOUNT_ID/profiles/PROFILE_ID/bookings', {
-  headers: {
-    'Authorization': 'Bearer YOUR_API_KEY'
-  }
-})
-.then(response => response.json())
-.then(data => console.log(data));</code></pre>
+            <h2 class="section-title">よくある質問</h2>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>予約のキャンセルや変更はできますか？</h3>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>はい、予約確認メールから簡単にキャンセル・変更が可能です。24時間前までの変更をお願いしております。</p>
+                    </div>
                 </div>
-                <div class="api-card">
-                    <h3>必要な情報</h3>
-                    <ul>
-                        <li>アカウントID</li>
-                        <li>プロフィールID</li>
-                        <li>APIキー（ダッシュボードから取得）</li>
-                    </ul>
-                    <p>詳細は <a href="https://api.youcanbook.me/docs/" target="_blank">YCBM API ドキュメント</a>を参照してください。</p>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>予約確認はどのように届きますか？</h3>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>予約完了後、即座にご登録のメールアドレスに確認メールが送信されます。リマインダーも予約日時の前に自動送信されます。</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>料金はかかりますか？</h3>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>予約システムの利用は完全無料です。サービス内容によって料金が発生する場合は、予約時に明示されます。</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>予約可能な時間帯は？</h3>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>24時間いつでもオンラインで予約可能です。カレンダーに表示されている時間帯からお選びいただけます。</p>
+                    </div>
                 </div>
             </div>
         </div>
