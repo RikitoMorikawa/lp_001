@@ -11,16 +11,10 @@ export interface TeacherProfile {
   message: string;
 }
 
-export interface ChatMessage {
-  role: 'user' | 'model';
-  text: string;
-}
-
 export enum SectionId {
   HERO = 'hero',
   CONCEPT = 'concept',
   COMPARISON = 'comparison',
   TEACHERS = 'teachers',
-  AI_ADVISOR = 'ai-advisor',
   FAQ = 'faq'
 }

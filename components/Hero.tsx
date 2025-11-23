@@ -32,7 +32,7 @@ const Hero: React.FC = () => {
       </div>
 
       {/* Scroll Indicator */}
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce text-white/80">
+      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce text-white/80 flex justify-center w-full">
         <ChevronDown size={40} />
       </div>
     </div>
