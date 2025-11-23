@@ -36,7 +36,7 @@ const TeacherGallery: React.FC = () => {
 
         <div className="space-y-12">
           {teachers.map((teacher) => (
-            <div key={teacher.id} className="flex flex-col sm:flex-row items-center gap-6 sm:gap-8">
+            <div key={teacher.id} className="flex items-center gap-4 sm:gap-8">
               {/* Image */}
               <div className="flex-shrink-0">
                 <img 
@@ -47,8 +47,10 @@ const TeacherGallery: React.FC = () => {
               </div>
               {/* Speech Bubble */}
               <div className="relative w-full bg-white p-6 rounded-xl shadow-md speech-bubble">
-                <h3 className="text-xl font-bold mb-1">{teacher.name}</h3>
-                <p className="text-xs text-rose-500 uppercase tracking-widest mb-3">{teacher.hobby}</p>
+                <div className="flex items-baseline gap-2 mb-2">
+                  <h3 className="text-xl font-bold">{teacher.name}</h3>
+                  <p className="text-xs text-rose-500 uppercase tracking-widest">{teacher.hobby}</p>
+                </div>
                 <p className="text-sm text-gray-600 italic">"{teacher.message}"</p>
               </div>
             </div>
@@ -59,19 +61,17 @@ const TeacherGallery: React.FC = () => {
         .speech-bubble {
           position: relative;
         }
-        @media (min-width: 640px) {
-          .speech-bubble::before {
-            content: '';
-            position: absolute;
-            width: 0;
-            height: 0;
-            border-top: 15px solid transparent;
-            border-bottom: 15px solid transparent;
-            border-right: 15px solid white;
-            top: 50%;
-            left: -15px;
-            transform: translateY(-50%);
-          }
+        .speech-bubble::before {
+          content: '';
+          position: absolute;
+          width: 0;
+          height: 0;
+          border-top: 15px solid transparent;
+          border-bottom: 15px solid transparent;
+          border-right: 15px solid white;
+          top: 50%;
+          left: -15px;
+          transform: translateY(-50%);
         }
       `}</style>
     </section>
