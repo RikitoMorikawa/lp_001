@@ -31,7 +31,7 @@ const TeacherGallery: React.FC = () => {
       <div className="max-w-4xl mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-2xl md:text-4xl font-bold mb-4">Our Teachers</h2>
-          <p className="text-rose-600">フレンドリーで経験豊富な先生たちが、あなたを待っています。</p>
+          <p className="text-rose-600">フレンドリーで経験豊富な先生たちが、<br></br>あなたを待っています。</p>
         </div>
 
         <div className="space-y-12">
