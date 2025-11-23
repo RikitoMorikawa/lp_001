@@ -6,7 +6,7 @@ const Footer: React.FC = () => {
     <footer className="bg-gray-900 text-gray-300 py-12 md:py-16">
       <div className="max-w-4xl mx-auto px-4 text-center">
         {/* Brand */}
-        <h3 className="text-2xl md:text-3xl font-bold text-white mb-4 tracking-wider">Cebu Romance English</h3>
+        <h3 className="text-2xl md:text-3xl font-bold text-white mb-4 tracking-wider">セブ島マンツーマン留学</h3>
 
         {/* Description */}
         <p className="text-xs md:text-sm leading-relaxed text-gray-400 max-w-md mx-auto mb-8">
@@ -32,7 +32,7 @@ const Footer: React.FC = () => {
 
         {/* Copyright */}
         <div className="border-t border-gray-800 pt-8 text-[10px] md:text-xs text-gray-600 tracking-wide">
-          &copy; {new Date().getFullYear()} Cebu Romance English. All rights reserved.
+          &copy; {new Date().getFullYear()} セブ島マンツーマン留学. All rights reserved.
         </div>
       </div>
     </footer>

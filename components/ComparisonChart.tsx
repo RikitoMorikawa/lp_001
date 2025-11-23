@@ -2,8 +2,8 @@ import React from 'react';
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, Cell } from 'recharts';
 
 const data = [
-  { name: '一般的な留学', value: 30, color: '#94a3b8' }, // Slate-400
-  { name: 'Cebu Romance English', value: 90, color: '#14b8a6' }, // Teal-500
+  { name: "一般的な留学", value: 30, color: "#94a3b8" }, // Slate-400
+  { name: "セブ島マンツーマン留学", value: 90, color: "#14b8a6" }, // Teal-500
 ];
 
 const ComparisonChart: React.FC = () => {
@@ -16,7 +16,7 @@ const ComparisonChart: React.FC = () => {
           </h2>
           <p className="text-gray-600 text-base md:text-lg leading-relaxed mb-6">
             教室で他の生徒の話を聞いているだけの時間、もったいなくないですか？<br/>
-            Cebu Romance Englishなら、常に先生とマンツーマン。移動中も、食事中も、すべてがレッスンの場です。
+            セブ島マンツーマン留学なら、常に先生とマンツーマン。移動中も、食事中も、すべてがレッスンの場です。
           </p>
           <ul className="space-y-3">
             <li className="flex items-center gap-3">
