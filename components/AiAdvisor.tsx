@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Bot, Send, X, Loader2 } from 'lucide-react';
+import { Bot, Send, X, Loader2, Sparkles } from 'lucide-react';
 import { getTravelAdvice } from '../services/geminiService';
 import { ChatMessage } from '../types';
 
@@ -27,11 +27,27 @@ const AiAdvisor: React.FC = () => {
   };
 
   return (
-    <section className="py-12 bg-indigo-50 border-y border-indigo-100 relative overflow-hidden">
+    <section className="py-16 md:py-20 bg-indigo-50 border-y border-indigo-100 relative overflow-hidden">
+      <div className="max-w-4xl mx-auto px-4 text-center">
+        <Sparkles className="mx-auto text-indigo-500 h-12 w-12 mb-4" />
+        <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-4">
+          気になることはAIに相談！
+        </h2>
+        <p className="text-gray-600 max-w-2xl mx-auto mb-8">
+          「治安は大丈夫？」「おすすめのお土産は？」など、セブ島に関する質問があれば、AIコンシェルジュが24時間いつでもお答えします。
+        </p>
+        <button
+          onClick={() => setIsOpen(true)}
+          className="bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-3 px-8 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
+        >
+          AIコンシェルジュに質問する
+        </button>
+      </div>
+
       {/* Modal Chat Interface */}
       {isOpen && (
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 p-4 backdrop-blur-sm">
-          <div className="bg-white w-full max-w-md rounded-2xl shadow-2xl overflow-hidden flex flex-col h-[500px]">
+          <div className="bg-white w-full max-w-md rounded-2xl shadow-2xl overflow-hidden flex flex-col h-[80vh] max-h-[600px]">
             {/* Header */}
             <div className="bg-indigo-600 p-4 flex justify-between items-center text-white">
               <div className="flex items-center gap-2">

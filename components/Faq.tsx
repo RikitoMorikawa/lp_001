@@ -5,11 +5,11 @@ import { Plus, Minus } from 'lucide-react';
 const faqs: FaqItem[] = [
   {
     question: "英語が全く話せなくても大丈夫ですか？",
-    answer: "もちろんです！先生は初心者への指導に慣れており、ジェスチャーや翻訳アプリを交えながら楽しくコミュニケーションを取ってくれます。"
+    answer: "もちろんです！講師は初心者への指導に慣れており、ジェスチャーや翻訳アプリを交えながら楽しくコミュニケーションを取ってくれます。"
   },
   {
-    question: "「デート」といっても、本当のデートではないですよね？",
-    answer: "はい、あくまで「デートのようなシチュエーション」で行う英会話レッスンです。恋愛関係を目的としたサービスではありませんのでご安心ください。"
+    question: "マンツーマンでの外出レッスンはどのようなものですか？",
+    answer: "はい、講師と1対1でカフェやショッピングモールなどへ外出する実践的なレッスンです。あくまで英会話力向上を目的としており、講師は常にプロフェッショナルな態度を保ちますのでご安心ください。"
   },
   {
     question: "どんな場所に行きますか？",
@@ -17,7 +17,7 @@ const faqs: FaqItem[] = [
   },
   {
     question: "治安は大丈夫ですか？",
-    answer: "先生が常に同行し、安全なエリアを選んでレッスンを行います。夜間の危険なエリアへの立ち入りは禁止されています。"
+    answer: "講師が常に同行し、安全なエリアを選んでレッスンを行います。夜間の危険なエリアへの立ち入りは禁止されています。"
   }
 ];
 
@@ -29,9 +29,9 @@ const Faq: React.FC = () => {
   };
 
   return (
-    <section className="py-20 bg-white">
+    <section className="py-16 md:py-20 bg-white">
       <div className="max-w-3xl mx-auto px-4">
-        <h2 className="text-3xl font-bold text-center text-gray-800 mb-12">よくある質問</h2>
+        <h2 className="text-2xl md:text-3xl font-bold text-center text-gray-800 mb-12">よくある質問</h2>
         <div className="space-y-4">
           {faqs.map((faq, index) => (
             <div key={index} className="border border-gray-200 rounded-xl overflow-hidden">
