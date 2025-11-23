@@ -42,16 +42,16 @@ const TeacherGallery: React.FC = () => {
                 <img 
                   src={teacher.image} 
                   alt={teacher.name} 
-                  className="w-32 h-32 object-cover rounded-full shadow-lg"
+                  className="w-24 h-24 object-cover rounded-full shadow-lg"
                 />
               </div>
               {/* Speech Bubble */}
-              <div className="relative w-full bg-white p-6 rounded-xl shadow-md speech-bubble">
+              <div className="relative w-full bg-white p-4 rounded-xl shadow-md speech-bubble">
                 <div className="flex items-baseline gap-2 mb-2">
-                  <h3 className="text-xl font-bold">{teacher.name}</h3>
+                  <h3 className="text-lg font-bold">{teacher.name}</h3>
                   <p className="text-xs text-rose-500 uppercase tracking-widest">{teacher.hobby}</p>
                 </div>
-                <p className="text-sm text-gray-600 italic">"{teacher.message}"</p>
+                <p className="text-xs text-gray-600 italic">"{teacher.message}"</p>
               </div>
             </div>
           ))}
