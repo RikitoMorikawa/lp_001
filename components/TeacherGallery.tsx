@@ -6,60 +6,74 @@ const teachers: TeacherProfile[] = [
     id: 1,
     name: "Maria",
     hobby: "Cafe Hopping",
-    image: "https://picsum.photos/id/64/400/400", // Placeholder: Female portrait
+    image: "https://picsum.photos/id/64/200/200",
     message: "一緒に美味しいコーヒーを探しに行きましょう！"
   },
   {
     id: 2,
-    name: "John",
-    hobby: "Surfing",
-    image: "https://picsum.photos/id/91/400/400", // Placeholder: Male portrait
-    message: "英語だけじゃなく、セブの海も案内しますよ。"
+    name: "Chloe",
+    hobby: "Yoga",
+    image: "https://picsum.photos/id/211/200/200",
+    message: "朝のビーチでヨガをして、心も体もリフレッシュしませんか？"
   },
   {
     id: 3,
     name: "Angel",
     hobby: "Shopping",
-    image: "https://picsum.photos/id/338/400/400", // Placeholder: Female
+    image: "https://picsum.photos/id/338/200/200",
     message: "最新のモールでショッピングしながら英会話♪"
-  },
-  {
-    id: 4,
-    name: "Mark",
-    hobby: "Photography",
-    image: "https://picsum.photos/id/177/400/400", // Placeholder: Male
-    message: "映えるスポットで素敵な写真を撮りましょう。"
   }
 ];
 
 const TeacherGallery: React.FC = () => {
   return (
-    <section className="py-20 bg-teal-900 text-white">
-      <div className="max-w-6xl mx-auto px-4">
+    <section className="py-16 md:py-20 bg-rose-50 text-gray-800">
+      <div className="max-w-4xl mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-2xl md:text-4xl font-bold mb-4">Our Teachers</h2>
-          <p className="text-teal-200">フレンドリーで経験豊富な先生たちが、あなたを待っています。</p>
+          <p className="text-rose-600">フレンドリーで経験豊富な先生たちが、あなたを待っています。</p>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="space-y-12">
           {teachers.map((teacher) => (
-            <div key={teacher.id} className="group relative overflow-hidden rounded-2xl bg-teal-800 hover:bg-teal-700 transition-colors duration-300 shadow-xl">
-              <div className="aspect-square w-full overflow-hidden">
+            <div key={teacher.id} className="flex flex-col sm:flex-row items-center gap-6 sm:gap-8">
+              {/* Image */}
+              <div className="flex-shrink-0">
                 <img 
                   src={teacher.image} 
                   alt={teacher.name} 
-                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                  className="w-32 h-32 object-cover rounded-full shadow-lg"
                 />
               </div>
-              <div className="p-6">
+              {/* Speech Bubble */}
+              <div className="relative w-full bg-white p-6 rounded-xl shadow-md speech-bubble">
                 <h3 className="text-xl font-bold mb-1">{teacher.name}</h3>
-                <p className="text-xs text-teal-300 uppercase tracking-widest mb-3">{teacher.hobby}</p>
-                <p className="text-sm text-teal-100 opacity-80 italic">"{teacher.message}"</p>
+                <p className="text-xs text-rose-500 uppercase tracking-widest mb-3">{teacher.hobby}</p>
+                <p className="text-sm text-gray-600 italic">"{teacher.message}"</p>
               </div>
             </div>
           ))}
         </div>
       </div>
+      <style>{`
+        .speech-bubble {
+          position: relative;
+        }
+        @media (min-width: 640px) {
+          .speech-bubble::before {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 0;
+            border-top: 15px solid transparent;
+            border-bottom: 15px solid transparent;
+            border-right: 15px solid white;
+            top: 50%;
+            left: -15px;
+            transform: translateY(-50%);
+          }
+        }
+      `}</style>
     </section>
   );
 };
