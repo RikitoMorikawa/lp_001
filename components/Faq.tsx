@@ -22,7 +22,7 @@ const faqs: FaqItem[] = [
 ];
 
 const Faq: React.FC = () => {
-  const [openIndex, setOpenIndex] = useState<number | null>(0);
+  const [openIndex, setOpenIndex] = useState<number | null>(null);
 
   const toggleFaq = (index: number) => {
     setOpenIndex(openIndex === index ? null : index);
@@ -39,7 +39,7 @@ const Faq: React.FC = () => {
                 className="w-full flex items-center justify-between p-5 bg-white hover:bg-gray-50 transition-colors text-left"
                 onClick={() => toggleFaq(index)}
               >
-                <span className="font-bold text-gray-700">{faq.question}</span>
+                <span className="font-bold text-gray-700 text-sm md:text-base">{faq.question}</span>
                 {openIndex === index ? <Minus size={20} className="text-teal-500" /> : <Plus size={20} className="text-gray-400" />}
               </button>
               <div 
@@ -47,7 +47,7 @@ const Faq: React.FC = () => {
                   openIndex === index ? 'max-h-48 opacity-100' : 'max-h-0 opacity-0'
                 }`}
               >
-                <div className="p-5 pt-0 text-gray-600 bg-gray-50 border-t border-gray-100">
+                <div className="p-5 pt-0 text-gray-600 text-xs md:text-sm bg-gray-50 border-t border-gray-100">
                   {faq.answer}
                 </div>
               </div>
