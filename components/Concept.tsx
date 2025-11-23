@@ -3,7 +3,7 @@ import { Coffee, MapPin, Sun } from 'lucide-react';
 
 const Concept: React.FC = () => {
   return (
-    <section className="py-16 md:py-20 bg-sky-50">
+    <section className="py-16 md:py-20 bg-pink-50">
       <div className="max-w-6xl mx-auto px-4">
         <div className="text-center mb-12 md:mb-16">
           <span className="text-teal-600 font-bold tracking-wider text-sm">CONCEPT</span>

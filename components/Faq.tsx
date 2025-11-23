@@ -29,7 +29,7 @@ const Faq: React.FC = () => {
   };
 
   return (
-    <section className="py-16 md:py-20 bg-sky-50">
+    <section className="py-16 md:py-20 bg-pink-50">
       <div className="max-w-3xl mx-auto px-4">
         <h2 className="text-2xl md:text-3xl font-bold text-center text-gray-800 mb-12">よくある質問</h2>
         <div className="space-y-4">

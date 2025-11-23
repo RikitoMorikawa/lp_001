@@ -27,7 +27,7 @@ const teachers: TeacherProfile[] = [
 
 const TeacherGallery: React.FC = () => {
   return (
-    <section className="py-16 md:py-20 bg-sky-50 text-gray-800">
+    <section className="py-16 md:py-20 bg-pink-50 text-gray-800">
       <div className="max-w-4xl mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-2xl md:text-4xl font-bold mb-4">Our Teachers</h2>
