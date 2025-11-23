@@ -3,7 +3,6 @@ import Hero from './components/Hero';
 import Concept from './components/Concept';
 import ComparisonChart from './components/ComparisonChart';
 import TeacherGallery from './components/TeacherGallery';
-import AiAdvisor from './components/AiAdvisor';
 import Faq from './components/Faq';
 import Footer from './components/Footer';
 import FloatingLineButton from './components/FloatingLineButton';
@@ -15,7 +14,6 @@ const App: React.FC = () => {
       <Concept />
       <ComparisonChart />
       <TeacherGallery />
-      <AiAdvisor />
       <Faq />
       <Footer />
       <FloatingLineButton />
