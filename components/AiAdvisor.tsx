@@ -28,31 +28,6 @@ const AiAdvisor: React.FC = () => {
 
   return (
     <section className="py-12 bg-indigo-50 border-y border-indigo-100 relative overflow-hidden">
-       {/* Background Decoration */}
-       <div className="absolute top-0 right-0 -mt-10 -mr-10 w-40 h-40 bg-indigo-200 rounded-full blur-3xl opacity-50"></div>
-       <div className="absolute bottom-0 left-0 -mb-10 -ml-10 w-40 h-40 bg-pink-200 rounded-full blur-3xl opacity-50"></div>
-
-      <div className="max-w-4xl mx-auto px-4 text-center relative z-10">
-        <div className="inline-flex items-center justify-center p-3 bg-white rounded-full shadow-sm mb-6">
-          <Bot className="text-indigo-600 mr-2" />
-          <span className="font-bold text-gray-700">AIトラベルアシスタント</span>
-        </div>
-        <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-4">
-          セブ島について不安なことはありますか？
-        </h2>
-        <p className="text-gray-600 mb-8">
-          治安や持ち物、おすすめのカフェなど、Gemini AIが24時間いつでもお答えします。
-        </p>
-        
-        <button 
-          onClick={() => setIsOpen(true)}
-          className="bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-3 px-8 rounded-full shadow-lg transition-transform transform hover:scale-105 flex items-center mx-auto gap-2"
-        >
-          <Bot size={20} />
-          AIに質問してみる
-        </button>
-      </div>
-
       {/* Modal Chat Interface */}
       {isOpen && (
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 p-4 backdrop-blur-sm">
