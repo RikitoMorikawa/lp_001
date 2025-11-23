@@ -9,7 +9,7 @@ const Hero: React.FC = () => {
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{ backgroundImage: `url('https://picsum.photos/id/10/1600/900')` }} // Ocean/Nature vibe
       >
-        <div className="absolute inset-0 bg-black/30 bg-gradient-to-b from-black/10 via-transparent to-sky-900/60"></div>
+        <div className="absolute inset-0 bg-black/30 bg-gradient-to-b from-black/10 via-transparent to-pink-900/60"></div>
       </div>
 
       {/* Content */}
