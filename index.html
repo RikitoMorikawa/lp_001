@@ -1,184 +1,46 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>セブ島留学なら当社へ - 最高の英語学習体験</title>
-    <link rel="stylesheet" href="styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cebu Romance English | 実践型デート留学</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+      body {
+        font-family: 'Zen Kaku Gothic New', sans-serif;
+      }
+      /* Custom scrollbar for webkit */
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #f1f1f1; 
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #888; 
+        border-radius: 4px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #555; 
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.554.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.30.0",
+    "recharts": "https://aistudiocdn.com/recharts@^3.5.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
 </head>
-<body>
-    <!-- ヒーローセクション -->
-    <header class="hero">
-        <nav class="navbar">
-            <div class="container">
-                <div class="nav-brand">
-                    <h2>セブ島留学</h2>
-                </div>
-                <ul class="nav-menu">
-                    <li><a href="#features">特徴</a></li>
-                    <li><a href="#line">公式LINE</a></li>
-                    <li><a href="#contact">お問い合わせ</a></li>
-                </ul>
-            </div>
-        </nav>
-
-        <div class="hero-content container">
-            <div class="hero-badge">初心者でも安心</div>
-            <h1 class="hero-title">セブ島で<br>本気で英語を学ぶ</h1>
-            <p class="hero-subtitle">マンツーマンレッスンで、あなたの英語力を確実に引き上げます。<br>最高の環境で、最高の仲間と、最高の思い出を。</p>
-            <div class="hero-cta-group">
-                <a href="#line" class="cta-button cta-primary">今すぐLINEで相談</a>
-                <a href="#features" class="cta-button cta-secondary">詳しく見る</a>
-            </div>
-            <div class="hero-features">
-                <div class="hero-feature-item">
-                    <span class="check-icon">✓</span>
-                    <span>格安でマンツーマン</span>
-                </div>
-                <div class="hero-feature-item">
-                    <span class="check-icon">✓</span>
-                    <span>リゾート気分で学習</span>
-                </div>
-                <div class="hero-feature-item">
-                    <span class="check-icon">✓</span>
-                    <span>異文化交流</span>
-                </div>
-            </div>
-        </div>
-    </header>
-
-    <!-- 実績セクション -->
-    <section class="stats-section">
-        <div class="container">
-            <div class="stats-grid">
-                <div class="stat-card">
-                    <div class="stat-number">1,500+</div>
-                    <div class="stat-label">卒業生</div>
-                </div>
-                <div class="stat-card">
-                    <div class="stat-number">95%</div>
-                    <div class="stat-label">満足度</div>
-                </div>
-                <div class="stat-card">
-                    <div class="stat-number">週50時間</div>
-                    <div class="stat-label">レッスン</div>
-                </div>
-                <div class="stat-card">
-                    <div class="stat-number">10カ国</div>
-                    <div class="stat-label">以上の国籍</div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- 特徴セクション -->
-    <section id="features" class="features">
-        <div class="container">
-            <h2 class="section-title">私たちの特徴</h2>
-            <div class="features-grid">
-                <div class="feature-card">
-                    <div class="feature-icon">👩‍🏫</div>
-                    <h3>マンツーマンレッスン</h3>
-                    <p>あなたのレベルに合わせたオーダーメイドのレッスンで、効率的に英語力を向上させます。</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">🏝️</div>
-                    <h3>最高のロケーション</h3>
-                    <p>美しいビーチと温暖な気候のセブ島で、リラックスしながら学習に集中できます。</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">🤝</div>
-                    <h3>国際的な環境</h3>
-                    <p>様々な国から来た留学生との交流を通じて、異文化理解を深め、グローバルな視野を広げます。</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">サポート</div>
-                    <h3>安心のサポート体制</h3>
-                    <p>現地での生活や学習の悩みを、経験豊富な日本人スタッフがサポートします。</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- LINE誘導セクション -->
-    <section id="line" class="booking-section">
-        <div class="container">
-            <h2 class="section-title">公式LINEでお気軽にご相談ください</h2>
-            <p class="booking-description">セブ島留学に関するご質問や、コースの詳細、お見積もりなど、お気軽にご相談ください。</p>
-
-            <div class="line-cta-area">
-                <a href="https://line.me/R/ti/p/%40abcdefg" class="cta-button cta-primary line-button" target="_blank" rel="noopener noreferrer">
-                    <img src="https://scdn.line-apps.com/n/line_add_friends/btn/ja.png" alt="友だち追加" height="60" border="0">
-                </a>
-                <p class="line-note">上のボタンをクリックして、公式LINEアカウントを友だち追加してください。</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- FAQセクション -->
-    <section class="faq-section">
-        <div class="container">
-            <h2 class="section-title">よくある質問</h2>
-            <div class="faq-container">
-                <div class="faq-item">
-                    <div class="faq-question">
-                        <h3>英語が全く話せなくても大丈夫ですか？</h3>
-                        <span class="faq-icon">+</span>
-                    </div>
-                    <div class="faq-answer">
-                        <p>はい、全く問題ありません。初心者向けのコースも充実しており、マンツーマンレッスンで基礎から丁寧に指導します。</p>
-                    </div>
-                </div>
-                <div class="faq-item">
-                    <div class="faq-question">
-                        <h3>費用はどのくらいかかりますか？</h3>
-                        <span class="faq-icon">+</span>
-                    </div>
-                    <div class="faq-answer">
-                        <p>コースや滞在期間によって異なります。まずは公式LINEからお気軽にお問い合わせください。お見積もりをお送りします。</p>
-                    </div>
-                </div>
-                <div class="faq-item">
-                    <div class="faq-question">
-                        <h3>治安は問題ありませんか？</h3>
-                        <span class="faq-icon">+</span>
-                    </div>
-                    <div class="faq-answer">
-                        <p>当校はセブ市内でも特に治安の良いエリアに位置しています。また、24時間体制の警備員が常駐しており、安心して生活できます。</p>
-                    </div>
-                </div>
-                <div class="faq-item">
-                    <div class="faq-question">
-                        <h3>他の国からの留学生はいますか？</h3>
-                        <span class="faq-icon">+</span>
-                    </div>
-                    <div class="faq-answer">
-                        <p>はい、韓国、台湾、ベトナム、ロシアなど、様々な国から留学生が来ています。国際色豊かな環境で学ぶことができます。</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- お問い合わせセクション -->
-    <section id="contact" class="contact-section">
-        <div class="container">
-            <h2 class="section-title">お問い合わせ</h2>
-            <p>ご質問やサポートが必要な場合は、お気軽にお問い合わせください。</p>
-            <div class="contact-info">
-                <p>📧 Email: info@cebu-study.com</p>
-                <p>📞 Tel: 03-5555-6789</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- フッター -->
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; 2025 セブ島留学. All rights reserved.</p>
-        </div>
-    </footer>
-
-    <script src="scripts.js"></script>
+  <body>
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
 </body>
 </html>
