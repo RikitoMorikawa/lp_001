@@ -29,7 +29,7 @@ const Faq: React.FC = () => {
   };
 
   return (
-    <section className="py-16 md:py-20 bg-white">
+    <section className="py-16 md:py-20 bg-sky-50">
       <div className="max-w-3xl mx-auto px-4">
         <h2 className="text-2xl md:text-3xl font-bold text-center text-gray-800 mb-12">よくある質問</h2>
         <div className="space-y-4">
@@ -40,7 +40,7 @@ const Faq: React.FC = () => {
                 onClick={() => toggleFaq(index)}
               >
                 <span className="font-bold text-gray-700 text-sm md:text-base">{faq.question}</span>
-                {openIndex === index ? <Minus size={20} className="text-teal-500" /> : <Plus size={20} className="text-gray-400" />}
+                {openIndex === index ? <Minus size={20} className="text-sky-500" /> : <Plus size={20} className="text-gray-400" />}
               </button>
               <div 
                 className={`transition-all duration-300 ease-in-out overflow-hidden ${

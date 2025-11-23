@@ -8,7 +8,7 @@ const data = [
 
 const ComparisonChart: React.FC = () => {
   return (
-    <section className="py-16 md:py-20 bg-gray-50">
+    <section className="py-16 md:py-20 bg-sky-100">
       <div className="max-w-5xl mx-auto px-4 flex flex-col md:flex-row items-center gap-8 md:gap-12">
         <div className="md:w-1/2">
           <h2 className="text-2xl md:text-4xl font-bold text-gray-800 mb-6">

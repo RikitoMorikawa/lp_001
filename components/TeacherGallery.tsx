@@ -27,11 +27,11 @@ const teachers: TeacherProfile[] = [
 
 const TeacherGallery: React.FC = () => {
   return (
-    <section className="py-16 md:py-20 bg-rose-50 text-gray-800">
+    <section className="py-16 md:py-20 bg-sky-50 text-gray-800">
       <div className="max-w-4xl mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-2xl md:text-4xl font-bold mb-4">Our Teachers</h2>
-          <p className="text-rose-600">フレンドリーで経験豊富な先生たちが、<br></br>あなたを待っています。</p>
+          <p className="text-sky-600">フレンドリーで経験豊富な先生たちが、<br></br>あなたを待っています。</p>
         </div>
 
         <div className="space-y-12">
@@ -49,7 +49,7 @@ const TeacherGallery: React.FC = () => {
               <div className="relative w-full bg-white p-4 rounded-xl shadow-md speech-bubble">
                 <div className="flex items-baseline gap-2 mb-2">
                   <h3 className="text-lg font-bold">{teacher.name}</h3>
-                  <p className="text-xs text-rose-500 uppercase tracking-widest">{teacher.hobby}</p>
+                  <p className="text-xs text-sky-500 uppercase tracking-widest">{teacher.hobby}</p>
                 </div>
                 <p className="text-xs text-gray-600 italic">"{teacher.message}"</p>
               </div>

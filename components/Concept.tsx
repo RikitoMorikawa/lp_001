@@ -3,7 +3,7 @@ import { Coffee, MapPin, Sun } from 'lucide-react';
 
 const Concept: React.FC = () => {
   return (
-    <section className="py-16 md:py-20 bg-white">
+    <section className="py-16 md:py-20 bg-sky-50">
       <div className="max-w-6xl mx-auto px-4">
         <div className="text-center mb-12 md:mb-16">
           <span className="text-teal-600 font-bold tracking-wider text-sm">CONCEPT</span>
@@ -20,7 +20,7 @@ const Concept: React.FC = () => {
               <img src="https://picsum.photos/id/20/200/200" alt="Cafe Lesson" className="w-full h-full object-cover" />
             </div>
             <h3 className="text-xl font-bold text-gray-800 mb-2">CONCEPT 01</h3>
-            <p className="text-lg font-semibold text-teal-600 mb-4">Cafe Lesson</p>
+            <p className="text-lg font-semibold text-sky-600 mb-4">Cafe Lesson</p>
             <p className="text-sm md:text-base text-gray-600 leading-relaxed">
               おしゃれなカフェでドリンクを飲みながら。リラックスした雰囲気だからこそ、自然なフレーズが溢れ出します。
             </p>
