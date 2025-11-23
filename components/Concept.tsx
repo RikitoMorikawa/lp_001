@@ -1,5 +1,5 @@
 import React from 'react';
-import { Coffee, MapPin, Sun } from 'lucide-react';
+import { Coffee, Heart, MapPin, Sun } from 'lucide-react';
 
 const Concept: React.FC = () => {
   return (
@@ -8,7 +8,9 @@ const Concept: React.FC = () => {
         <div className="text-center mb-12 md:mb-16">
           <span className="text-teal-600 font-bold tracking-wider text-sm">CONCEPT</span>
           <h2 className="text-2xl md:text-4xl font-bold text-gray-800 mt-2">
-            「机の上」じゃ、<br className="sm:hidden"/>会話は弾まない。
+            「机の上」じゃ、
+            <br className="sm:hidden" />
+            会話は弾まない。
           </h2>
           <div className="w-20 h-1 bg-teal-400 mx-auto mt-6 rounded-full"></div>
         </div>
@@ -26,13 +28,13 @@ const Concept: React.FC = () => {
           </div>
 
           {/* Card 2 */}
-          <div className="bg-blue-50 rounded-2xl p-8 text-center hover:shadow-lg transition-shadow border border-blue-100 md:transform md:-translate-y-4">
-            <div className="bg-white w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6 shadow-md text-blue-500">
-              <MapPin size={36} />
+          <div className="bg-pink-50 rounded-2xl p-6 md:p-8 text-center hover:shadow-lg transition-shadow border border-pink-100 transform md:-translate-y-4">
+            <div className="bg-white w-16 h-16 md:w-20 md:h-20 rounded-full flex items-center justify-center mx-auto mb-4 md:mb-6 shadow-md text-pink-500">
+              <Heart size={32} />
             </div>
-            <h3 className="text-xl font-bold text-gray-800 mb-4">Town Walk</h3>
+            <h3 className="text-lg md:text-xl font-bold text-gray-800 mb-3">Date Style</h3>
             <p className="text-sm md:text-base text-gray-600 leading-relaxed">
-              先生と街を散策。道案内やショッピング、リアルなシチュエーションで生きた英語を習得。
+              まるでデートのように、先生と街を散策。道案内やショッピング、リアルなシチュエーションで生きた英語を習得。
             </p>
           </div>
 
