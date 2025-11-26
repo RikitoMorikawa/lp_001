@@ -17,7 +17,7 @@ const SectionDivider: React.FC = () => (
 
 function App() {
   return (
-    <div className="min-h-screen bg-gray-50 font-sans text-[#333333] antialiased pb-[80px]">
+    <div className="min-h-screen bg-gray-50 font-sans text-[#333333] antialiased pb-[65px]">
       <header>
         <Hero />
       </header>
