@@ -28,7 +28,7 @@ const Instructors: React.FC = () => {
                 </div>
 
                 <h3 className="text-2xl font-bold text-[#333333] mb-1 flex items-center gap-2">
-                  {instructor.name} <span className="text-base font-normal text-gray-500">({instructor.age})</span>
+                  {instructor.name} <span className="text-base font-normal text-gray-500"></span>
                 </h3>
 
                 <div className="w-full space-y-3 mt-4 text-sm">
