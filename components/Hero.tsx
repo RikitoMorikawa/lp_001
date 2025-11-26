@@ -19,7 +19,7 @@ const Hero: React.FC = () => {
       {/* Changed z-index to 0 to sit behind the text content (z-10) but visibly above the background due to DOM order/stacking context */}
       <div className="absolute bottom-0 left-0 z-0 w-[55%] md:w-[40%] lg:w-[35%] max-w-[550px] pointer-events-none opacity-90">
          <img
-           src="https://raw.githubusercontent.com/RikitoMorikawa/qrcodegenerator/refs/heads/main/public/photo.png?token=GHSAT0AAAAAADPUZLVC5JNB3J4YSLJ2MLXE2JGPMTQ"
+           src="public/top_photo.png"
            alt="Happy Student"
            className="w-full h-auto object-contain drop-shadow-2xl"
          />
