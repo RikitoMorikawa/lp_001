@@ -9,11 +9,11 @@ export const INSTRUCTORS: Instructor[] = [
     name: "Maria",
     age: 25,
     image: "https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=400&q=80",
-    background: "セブ大学英語教育学部卒 / 講師歴3年 / TOEIC 950",
-    hobbies: "カフェ巡り、ビーチヨガ、日本文化",
-    specialty: "日常会話、トラベル英語、発音矯正",
+    background: "セブ大学英語教育学部卒 / 講師歴3年",
+    hobbies: "カフェ巡り、ヨガ、日本文化",
+    specialty: "ビジネス英語、発音矯正",
     personality: "明るく優しい性格",
-    message: "リラックスして、楽しく英語を話しましょう！"
+    message: "リラックスして、楽しく英語を話しましょう！",
   },
   {
     id: 3,
@@ -24,7 +24,7 @@ export const INSTRUCTORS: Instructor[] = [
     hobbies: "音楽、ダンス、写真、ビーチ",
     specialty: "カジュアル英会話、スラング",
     personality: "元気で楽しい",
-    message: "英語を話すのが楽しくなりますよ！"
+    message: "英語を話すのが楽しくなりますよ！",
   },
   {
     id: 4,
@@ -33,10 +33,10 @@ export const INSTRUCTORS: Instructor[] = [
     image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=400&q=80",
     background: "心理学部卒 / コミュニケーションのプロ",
     hobbies: "アート、カフェ巡り、映画鑑賞",
-    specialty: "初心者向け、リスニング、文化交流",
+    specialty: "初心者向け、日常会話",
     personality: "聞き上手で丁寧",
-    message: "一緒に素敵な時間を過ごしながら学びましょう！"
-  }
+    message: "一緒に素敵な時間を過ごしながら学びましょう！",
+  },
 ];
 
 export const FEATURES: Feature[] = [
