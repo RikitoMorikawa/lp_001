@@ -61,7 +61,7 @@ export const SCHEDULE: ScheduleItem[] = [
   {
     time: "09:00-11:00",
     title: "カフェレッスン",
-    description: "お気に入りのカフェで、コーヒーを飲みながらリラックスして英会話。",
+    description: "お気に入りのカフェで、コーヒーを飲みリラックスして英会話。",
     image: "https://images.unsplash.com/photo-1453614512568-c4024d13c247?auto=format&fit=crop&w=600&q=80"
   },
   {
