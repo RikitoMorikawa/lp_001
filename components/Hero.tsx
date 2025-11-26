@@ -18,13 +18,13 @@ const Hero: React.FC = () => {
       {/* Inserted Bottom-Left Image */}
       {/* Changed z-index to 0 to sit behind the text content (z-10) but visibly above the background due to DOM order/stacking context */}
       <div className="absolute bottom-0 left-0 z-0 w-[55%] md:w-[40%] lg:w-[35%] max-w-[550px] pointer-events-none opacity-90">
-        <img src="public/top_photo.png" alt="Happy Student" className="w-full h-auto object-contain drop-shadow-2xl" />
+        <img src="/top_photo.png" alt="Happy Student" className="w-full h-auto object-contain drop-shadow-2xl" />
       </div>
 
       {/* Philippines Flag Image - Slightly moved to left from previous 70% */}
       <div className="absolute bottom-8 left-[60%] md:bottom-12 md:left-[50%] lg:left-[45%] z-0 w-32 md:w-40 lg:w-52 pointer-events-none">
         <img
-          src="https://freesozai.jp/sozai/nation_flag/ntf_137/ntf_137.png"
+          src="/ntf_137.png"
           alt="Philippines Flag"
           className="w-full h-auto object-contain drop-shadow-lg transform rotate-12 opacity-90"
         />
