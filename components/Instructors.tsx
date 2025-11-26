@@ -67,7 +67,7 @@ const Instructors: React.FC = () => {
 
             <MessageCircle className="w-6 h-6 fill-current" />
             <div className="flex flex-col items-start leading-tight">
-              <span className="text-lg md:text-xl font-bold">気になる講師と学んでみる</span>
+              <span className="text-lg md:text-xl font-bold">気になる講師と学ぶ</span>
               <span className="text-xs md:text-sm opacity-90 font-medium">まずはLINEで無料相談</span>
             </div>
             <ChevronRight className="w-6 h-6 ml-1 transition-transform group-hover:translate-x-1" />
