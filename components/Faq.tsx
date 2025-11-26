@@ -1,54 +1,45 @@
 import React, { useState } from 'react';
-import { FaqItem } from '../types';
-import { Plus, Minus } from 'lucide-react';
+import { FAQ_ITEMS } from '../constants';
+import { ChevronDown, ChevronUp } from 'lucide-react';
 
-const faqs: FaqItem[] = [
-  {
-    question: "英語が全く話せなくても大丈夫ですか？",
-    answer: "もちろんです！講師は初心者への指導に慣れており、ジェスチャーや翻訳アプリを交えながら楽しくコミュニケーションを取ってくれます。"
-  },
-  {
-    question: "マンツーマンでの外出レッスンはどのようなものですか？",
-    answer: "はい、講師と1対1でカフェやショッピングモールなどへ外出する実践的なレッスンです。あくまで英会話力向上を目的としており、講師は常にプロフェッショナルな態度を保ちますのでご安心ください。"
-  },
-  {
-    question: "どんな場所に行きますか？",
-    answer: "おしゃれなカフェ、ショッピングモール、ビーチサイドのレストラン、歴史的な教会など、セブ島の観光スポットやローカルな場所へ行きます。"
-  },
-  {
-    question: "治安は大丈夫ですか？",
-    answer: "講師が常に同行し、安全なエリアを選んでレッスンを行います。夜間の危険なエリアへの立ち入りは禁止されています。"
-  }
-];
-
-const Faq: React.FC = () => {
+const FAQ: React.FC = () => {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
-  const toggleFaq = (index: number) => {
+  const toggleFAQ = (index: number) => {
     setOpenIndex(openIndex === index ? null : index);
   };
 
   return (
-    <section className="py-16 md:py-20 bg-pink-50">
-      <div className="max-w-3xl mx-auto px-4">
-        <h2 className="text-2xl md:text-3xl font-bold text-center text-gray-800 mb-12">よくある質問</h2>
+    <section className="py-20 bg-[#F0F8FF]">
+      <div className="container mx-auto px-4 max-w-3xl">
+        <div className="text-center mb-12">
+          <span className="text-[#2B9FD9] font-bold tracking-widest uppercase text-sm mb-2 block">Q&A</span>
+          <h2 className="text-3xl md:text-4xl font-bold text-[#333333] relative inline-block">
+            よくある質問
+            <span className="absolute -bottom-4 left-1/2 transform -translate-x-1/2 w-16 h-1 bg-[#2B9FD9] rounded-full"></span>
+          </h2>
+        </div>
+
         <div className="space-y-4">
-          {faqs.map((faq, index) => (
-            <div key={index} className="border border-gray-200 rounded-xl overflow-hidden">
+          {FAQ_ITEMS.map((item, index) => (
+            <div key={index} className="bg-white rounded-lg shadow-sm overflow-hidden">
               <button
-                className="w-full flex items-center justify-between p-5 bg-white hover:bg-gray-50 transition-colors text-left"
-                onClick={() => toggleFaq(index)}
+                className="w-full px-6 py-4 text-left flex justify-between items-center bg-white hover:bg-gray-50 transition-colors"
+                onClick={() => toggleFAQ(index)}
               >
-                <span className="font-bold text-gray-700 text-sm md:text-base">{faq.question}</span>
-                {openIndex === index ? <Minus size={20} className="text-sky-500" /> : <Plus size={20} className="text-gray-400" />}
+                <span className="font-bold text-lg text-[#333333]">Q. {item.question}</span>
+                {openIndex === index ? (
+                  <ChevronUp className="w-5 h-5 text-[#2B9FD9]" />
+                ) : (
+                  <ChevronDown className="w-5 h-5 text-gray-400" />
+                )}
               </button>
+              
               <div 
-                className={`transition-all duration-300 ease-in-out overflow-hidden ${
-                  openIndex === index ? 'max-h-48 opacity-100' : 'max-h-0 opacity-0'
-                }`}
+                className={`transition-all duration-300 ease-in-out ${openIndex === index ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'}`}
               >
-                <div className="p-5 pt-0 text-gray-600 text-xs md:text-sm bg-gray-50 border-t border-gray-100">
-                  {faq.answer}
+                <div className="px-6 py-4 bg-blue-50 border-t border-blue-100 text-gray-700">
+                  <p>{item.answer}</p>
                 </div>
               </div>
             </div>
@@ -59,4 +50,4 @@ const Faq: React.FC = () => {
   );
 };
 
-export default Faq;
+export default FAQ;
