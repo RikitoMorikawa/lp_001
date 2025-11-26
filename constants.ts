@@ -13,7 +13,7 @@ export const INSTRUCTORS: Instructor[] = [
     hobbies: "カフェ巡り、ヨガ、日本文化",
     specialty: "ビジネス英語、発音矯正",
     personality: "明るく優しい性格",
-    message: "リラックスして、楽しく英語を話しましょう！",
+    message: "リラックスして、楽しく英語で話しましょう！",
   },
   {
     id: 3,

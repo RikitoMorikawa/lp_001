@@ -48,7 +48,7 @@ const Instructors: React.FC = () => {
 
                 <div className="mt-6 p-4 bg-pink-50 rounded-xl w-full text-center relative">
                   <div className="absolute -top-2 left-1/2 transform -translate-x-1/2 w-0 h-0 border-l-[8px] border-l-transparent border-r-[8px] border-r-transparent border-b-[8px] border-b-pink-50"></div>
-                  <p className="text-[#FF6B9D] font-medium italic">"{instructor.message}"</p>
+                  <p className="text-[#FF6B9D] font-medium italic text-sm">"{instructor.message}"</p>
                 </div>
               </div>
             </div>
