@@ -9,7 +9,7 @@ const Instructors: React.FC = () => {
         <div className="text-center mb-16">
           <span className="text-[#FFB347] font-bold tracking-widest uppercase text-sm mb-2 block">Instructors</span>
           <h2 className="text-2xl md:text-3xl font-bold text-white drop-shadow-md relative inline-block">
-            あなたの英語学習をサポートする
+            英語学習をサポートする
             <br className="md:hidden" />
             素敵な講師たち
             <span className="absolute -bottom-4 left-1/2 transform -translate-x-1/2 w-16 h-1 bg-[#FFB347] rounded-full"></span>
