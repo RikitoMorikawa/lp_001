@@ -27,7 +27,7 @@ const Hero: React.FC = () => {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 h-full flex flex-col justify-center items-center text-center px-4 text-white pb-24 md:pb-32">
+      <div className="relative z-10 h-full flex flex-col justify-start items-center text-center px-4 text-white pt-8 pb-24 md:pb-32">
         {/* Header Banner */}
         <div className="mb-6 bg-[#EF5B25] text-white py-2 px-6 md:px-10 text-lg md:text-2xl font-bold shadow-lg">初めての海外へ挑戦したい方へ</div>
 
