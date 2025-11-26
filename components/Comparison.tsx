@@ -18,8 +18,8 @@ const Comparison: React.FC = () => {
               <table className="w-full text-left border-collapse min-w-[500px]">
                 <thead>
                   <tr className="bg-gray-100">
-                    <th className="py-5 px-2 w-[20%] font-bold text-gray-700 border-b bg-gray-50 text-center text-base md:text-lg whitespace-nowrap">項目</th>
-                    <th className="py-5 px-2 w-[40%] font-bold text-gray-500 border-b bg-gray-50 text-center text-base md:text-lg whitespace-nowrap">従来の留学</th>
+                    <th className="py-5 px-2 w-[30%] font-bold text-gray-700 border-b bg-gray-50 text-center text-base md:text-lg whitespace-nowrap">項目</th>
+                    <th className="py-5 px-2 w-[30%] font-bold text-gray-500 border-b bg-gray-50 text-center text-base md:text-lg whitespace-nowrap">従来の留学</th>
                     <th className="py-5 px-2 w-[40%] font-bold text-[#2B9FD9] border-b bg-blue-50 text-center text-base md:text-lg whitespace-nowrap">当プログラム</th>
                   </tr>
                 </thead>
