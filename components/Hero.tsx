@@ -3,7 +3,7 @@ import { LINE_URL } from "../constants";
 
 const Hero: React.FC = () => {
   return (
-    <section className="relative w-full overflow-hidden h-[calc(100vh-65px)] min-h-[550px]">
+    <section className="relative w-full overflow-hidden h-[650px] min-h-[550px]">
       {/* Background Image */}
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat z-0"
@@ -23,15 +23,11 @@ const Hero: React.FC = () => {
 
       {/* Philippines Flag Image - Slightly moved to left from previous 70% */}
       <div className="absolute bottom-8 left-[60%] md:bottom-12 md:left-[50%] lg:left-[45%] z-0 w-32 md:w-40 lg:w-52 pointer-events-none">
-        <img
-          src="/ntf_137.png"
-          alt="Philippines Flag"
-          className="w-full h-auto object-contain drop-shadow-lg transform rotate-12 opacity-90"
-        />
+        <img src="/ntf_137.png" alt="Philippines Flag" className="w-full h-auto object-contain drop-shadow-lg transform rotate-12 opacity-90" />
       </div>
 
       {/* Content */}
-      <div className="relative z-10 h-full flex flex-col justify-center items-center text-center px-4 text-white pb-48 md:pb-32">
+      <div className="relative z-10 h-full flex flex-col justify-center items-center text-center px-4 text-white pb-24 md:pb-32">
         {/* Header Banner */}
         <div className="mb-6 bg-[#EF5B25] text-white py-2 px-6 md:px-10 text-lg md:text-2xl font-bold shadow-lg">初めての海外へ挑戦したい方へ</div>
 
