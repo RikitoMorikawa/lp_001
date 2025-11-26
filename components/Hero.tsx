@@ -50,9 +50,7 @@ const Hero: React.FC = () => {
           <div className="w-24 h-24 md:w-32 md:h-32 bg-white/95 rounded-full flex flex-col items-center justify-start shadow-[0_0_20px_rgba(255,159,28,0.6)] pt-2 transform transition duration-300 hover:scale-110 border-[3px] md:border-4 border-[#FF9F1C] relative group">
             <span className="text-[9px] md:text-[10px] text-[#FF9F1C] font-black mb-1 uppercase tracking-widest bg-orange-50 px-2 rounded-full">Point 02</span>
             <div className="flex flex-col items-center leading-tight">
-              <span className="text-[11px] md:text-sm font-bold text-gray-500 mb-0.5">
-                不要なコスト0
-              </span>
+              <span className="text-[11px] md:text-sm font-bold text-gray-500 mb-0.5">不要なコスト0</span>
               <span className="text-[#EF5B25] text-sm md:text-xl font-extrabold">業界最安値</span>
             </div>
           </div>
