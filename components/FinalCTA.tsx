@@ -8,7 +8,7 @@ const FinalCTA: React.FC = () => {
         <h2 className="text-3xl md:text-5xl font-bold mb-6 drop-shadow-md">
           まずは気軽にLINEで相談
         </h2>
-        <p className="text-xl mb-10 font-medium">
+        <p className="text-lg mb-10 font-medium">
           留学の疑問や不安、なんでもお答えします
         </p>
 
