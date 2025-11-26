@@ -6,7 +6,7 @@ import Comparison from './components/Comparison';
 import Instructors from './components/Instructors';
 import Schedule from './components/Schedule';
 import Pricing from './components/Pricing';
-import FAQ from './components/FAQ';
+import FAQ from './components/Faq';
 import Flow from './components/Flow';
 import FinalCTA from './components/FinalCTA';
 import FixedCTA from './components/FixedCTA';
