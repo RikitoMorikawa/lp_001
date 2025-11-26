@@ -3,7 +3,7 @@ import { LINE_URL } from "../constants";
 
 const Hero: React.FC = () => {
   return (
-    <section className="relative w-full overflow-hidden h-[650px] min-h-[550px]">
+    <section className="relative w-full overflow-hidden h-[600px] min-h-[550px]">
       {/* Background Image */}
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat z-0"
