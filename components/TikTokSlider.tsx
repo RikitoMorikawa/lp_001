@@ -64,17 +64,16 @@ const TikTokSlider: React.FC = () => {
     <section className="py-16 bg-gradient-to-b from-pink-50 to-white">
       <div className="max-w-6xl mx-auto px-4">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-black mb-4 text-gray-800">
-            実際のレッスン動画をチェック！
+          <span className="font-bold tracking-widest uppercase text-sm mb-2 block text-gray-600">[ TIKTOK ]</span>
+          <h2 className="text-3xl font-bold relative inline-block text-gray-800">
+            実際のレッスン動画をチェック
+            <span className="absolute -bottom-4 left-1/2 transform -translate-x-1/2 w-16 h-1 bg-pink-500 rounded-full"></span>
           </h2>
-          <p className="text-lg text-gray-600">
-            TikTokで公開中の人気動画をご覧ください
-          </p>
         </div>
 
         <div className="relative max-w-md mx-auto">
           {/* Slider Container */}
-          <div className="relative overflow-hidden rounded-2xl shadow-2xl" style={{ aspectRatio: '9/16' }}>
+          <div className="relative overflow-hidden rounded-2xl shadow-2xl" style={{ aspectRatio: '9/13' }}>
             <div
               className="flex transition-transform duration-500 ease-in-out h-full"
               style={{ transform: `translateX(-${currentIndex * 100}%)` }}
