@@ -7,22 +7,22 @@ const TikTokSlider: React.FC = () => {
 
   const videos = [
     {
-      id: '7581073872108195092',
-      url: 'https://www.tiktok.com/@barbie_senseidesu/video/7581073872108195092',
-      title: 'レッスン動画 1',
-      description: 'デート感覚で楽しく英会話'
-    },
-    {
       id: '7559244680647560469',
       url: 'https://www.tiktok.com/@barbie_senseidesu/video/7559244680647560469',
-      title: 'レッスン動画 2',
-      description: 'カフェで学ぶ実践英語'
+      title: 'レッスン動画 1',
+      description: ''
     },
     {
       id: '7563962249409219860',
       url: 'https://www.tiktok.com/@barbie_senseidesu/video/7563962249409219860',
+      title: 'レッスン動画 2',
+      description: ''
+    },
+    {
+      id: '7581073872108195092',
+      url: 'https://www.tiktok.com/@barbie_senseidesu/video/7581073872108195092',
       title: 'レッスン動画 3',
-      description: '楽しい英語レッスンの様子'
+      description: ''
     }
   ];
 
@@ -66,7 +66,7 @@ const TikTokSlider: React.FC = () => {
         <div className="text-center mb-12">
           <span className="font-bold tracking-widest uppercase text-sm mb-2 block text-gray-600">[ TIKTOK ]</span>
           <h2 className="text-3xl font-bold relative inline-block text-gray-800">
-            実際のレッスン動画をチェック
+            セブでの雰囲気
             <span className="absolute -bottom-4 left-1/2 transform -translate-x-1/2 w-16 h-1 bg-pink-500 rounded-full"></span>
           </h2>
         </div>
