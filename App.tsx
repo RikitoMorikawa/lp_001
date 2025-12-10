@@ -1,11 +1,11 @@
 import React from 'react';
 import Hero from './components/Hero';
 import Recommend from './components/Recommend';
+import TikTokSlider from './components/TikTokSlider';
 import Features from './components/Features';
 import Comparison from './components/Comparison';
 import Instructors from './components/Instructors';
 import Schedule from './components/Schedule';
-import Pricing from './components/Pricing';
 import FAQ from './components/Faq';
 import Flow from './components/Flow';
 import FinalCTA from './components/FinalCTA';
@@ -25,6 +25,8 @@ function App() {
       <main>
         <Recommend />
         <SectionDivider />
+        <TikTokSlider />
+        <SectionDivider />
         <Features />
         <SectionDivider />
         <Comparison />
@@ -32,8 +34,6 @@ function App() {
         <Instructors />
         <SectionDivider />
         <Schedule />
-        <SectionDivider />
-        <Pricing />
         <SectionDivider />
         <FAQ />
         <SectionDivider />
