@@ -106,10 +106,6 @@ const TikTokSlider: React.FC = () => {
                     <div className="w-20 h-20 bg-white/90 rounded-full flex items-center justify-center shadow-2xl group-hover:bg-white transition-colors">
                       <Play className="w-10 h-10 text-pink-500 fill-pink-500 ml-1" />
                     </div>
-                    <div className="text-center">
-                      <h3 className="text-white font-bold text-xl mb-2">{video.title}</h3>
-                      <p className="text-white/90 text-sm">{video.description}</p>
-                    </div>
                   </div>
 
                   {/* TikTok Icon */}
