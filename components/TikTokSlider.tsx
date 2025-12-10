@@ -9,21 +9,18 @@ const TikTokSlider: React.FC = () => {
     {
       id: '7581073872108195092',
       url: 'https://www.tiktok.com/@barbie_senseidesu/video/7581073872108195092',
-      thumbnail: `https://www.tiktok.com/oembed?url=https://www.tiktok.com/@barbie_senseidesu/video/7581073872108195092`,
       title: 'レッスン動画 1',
       description: 'デート感覚で楽しく英会話'
     },
     {
       id: '7559244680647560469',
       url: 'https://www.tiktok.com/@barbie_senseidesu/video/7559244680647560469',
-      thumbnail: `https://www.tiktok.com/oembed?url=https://www.tiktok.com/@barbie_senseidesu/video/7559244680647560469`,
       title: 'レッスン動画 2',
       description: 'カフェで学ぶ実践英語'
     },
     {
       id: '7563962249409219860',
       url: 'https://www.tiktok.com/@barbie_senseidesu/video/7563962249409219860',
-      thumbnail: `https://www.tiktok.com/oembed?url=https://www.tiktok.com/@barbie_senseidesu/video/7563962249409219860`,
       title: 'レッスン動画 3',
       description: '楽しい英語レッスンの様子'
     }
