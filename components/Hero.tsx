@@ -22,7 +22,7 @@ const Hero: React.FC = () => {
       </div>
 
       {/* Philippines Flag Image - Right side on PC, left-center on mobile/tablet */}
-      <div className="absolute bottom-8 left-[60%] md:bottom-12 md:left-[50%] lg:left-auto lg:right-8 lg:bottom-16 z-0 w-32 md:w-40 lg:w-52 pointer-events-none">
+      <div className="absolute bottom-8 left-[60%] md:bottom-12 md:left-[50%] lg:left-auto lg:right-20 lg:bottom-16 z-0 w-32 md:w-40 lg:w-52 pointer-events-none">
         <img src="/ntf_137.png" alt="Philippines Flag" className="w-full h-auto object-contain drop-shadow-lg transform rotate-12 opacity-90" />
       </div>
 
