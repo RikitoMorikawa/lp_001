@@ -61,7 +61,7 @@ const TikTokSlider: React.FC = () => {
   }, []);
 
   return (
-    <section className="py-16 bg-gradient-to-b from-pink-50 to-white">
+    <section className="py-16 bg-white">
       <div className="max-w-6xl mx-auto px-4">
         <div className="text-center mb-12">
           <span className="font-bold tracking-widest uppercase text-sm mb-2 block text-gray-600">[ TIKTOK ]</span>
