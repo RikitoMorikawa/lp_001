@@ -1,7 +1,7 @@
 import { MessageCircle, Calendar, Plane, CheckCircle, UserCheck } from 'lucide-react';
 import { Instructor, Plan, FaqItem, Feature, ScheduleItem, Step } from './types';
 
-export const LINE_URL = "https://line.me/R/ti/p/@example";
+export const LINE_URL = "https://lin.ee/Hs3hWIO";
 
 export const INSTRUCTORS: Instructor[] = [
   {
